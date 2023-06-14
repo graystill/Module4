@@ -1,10 +1,18 @@
-def string_counter(s):
-    syms_counter = {}
-    for sym in s:
-        syms_counter[sym] = syms_counter.get(sym, 0) + 1
+# def string_counter(s):
+#     syms_counter = {}
+#     for sym in s:
+#         syms_counter[sym] = syms_counter.get(sym, 0) + 1
+#
+#         for sym, count in syms_counter.items():
+#             print(sym, count)
+#
+#
+# string_counter('aaaabbsbdbd')
 
-        for sym, count in syms_counter.items():
-            print(sym, count)
+# ДЗ (урок 1, модуль 4)
 
-
-string_counter('aaaabbsbdbd')
+def palindrome(word):
+    if word == word[::-1]:
+        return True
+    else:
+        return False
